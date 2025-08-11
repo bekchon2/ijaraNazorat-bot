@@ -3,8 +3,3 @@ python-dotenv
 apscheduler
 sqlalchemy
 aiohttp
-aiogram==2.25.1
-python-dotenv
-apscheduler
-sqlalchemy
-aiohttp
