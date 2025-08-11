@@ -1,0 +1,166 @@
+bot uchun promt
+
+Python tilida aiogram kutubxonasi yordamida ishlaydigan Telegram bot yozing.
+Bot nomi: IjaraNazorat, foydalanuvchilar uchun
+
+Botning maqsadi: Bir nechta uyga ega va ularni ijaraga beradigan uy egalari uchun ijara jarayonini boshqarish.
+
+Talablar:
+1. Kirishda til tanlash
+
+Botga birinchi marta kirganda foydalanuvchiga ikki tugma chiqadi:
+
+🇺🇿 O‘zbek tili
+
+🇷🇺 Русский язык
+
+Tugmalar rangli bayroqcha rasm ko‘rinishida bo‘lsin.
+
+Foydalanuvchi tanlagan til users jadvalida saqlansin.
+
+Botdagi barcha menyular va xabarlar foydalanuvchi tanlagan tilda chiqsin.
+
+2. Telefon raqami bilan avtorizatsiya
+
+Til tanlangach, foydalanuvchi telefon raqamini yuborishi kerak.
+
+Telefon raqami users jadvalida saqlanadi.
+
+3. Profil bo‘limi
+
+Foydalanuvchi ma’lumotlari: F.I.Sh, telefon raqami, tanlangan til.
+
+Ma’lumotlarni o‘zgartirish tugmasi bo‘lishi kerak.
+
+4. Uylar ro‘yxati bo‘limi
+
+"Uy qo‘shish" tugmasi orqali quyidagilar kiritiladi:
+
+Manzil
+
+Maydoni (m²)
+
+Nechi xonali
+
+Har oygi ijara summasi (so‘m/$)
+
+Cheklovlar va to‘lovlar:
+
+Foydalanuvchi 1 ta uy qo‘shishi bepul.
+
+2 yoki undan ko‘p uy qo‘shish uchun obuna qilish kerak:
+
+Oylik: 12 000 so‘m
+
+Yillik: 100 000 so‘m
+
+To‘lov tizimlari: 9860350140898858 BEKCHANOV B.
+
+To‘lov o'tgandan keyin to'landi degan tugmani bosing, to'landi degan tugma bo'lsin, tugma bosilganda telegram orqali menga bildirishnoma kelsin telegram nik: t.me/@MrLogon1221, men qo'lda tekshirib to'lov bo'lgandan keyin premium ochib berishim kerak. 
+
+5. Ijarachilar bo‘limi
+
+"Ijarachi qo‘shish" tugmasi orqali kiritiladigan ma’lumotlar:
+
+F.I.Sh
+
+Passport ma’lumotlari
+
+Qachondan ijaraga joylashgani (sana)
+
+Qaysi uyga joylashgani (uylar ro‘yxatidan tanlanadi)
+
+6. Bildirishnomalar bo‘limi
+
+Bot push notification yuboradi:
+
+To‘liq to‘langan tugmasi
+
+To‘lanmagan tugmasi
+
+Qisman to‘langan (qancha to‘langan va qancha qolganligi) tugmalari bo'lishi kerak
+
+To‘lov muddati tugashiga necha kun qolganligi
+
+Muddati o‘tgan to‘lovlar haqida ogohlantirish
+
+Xabarlar foydalanuvchining tanlagan tilida yuboriladi.
+
+Bildirishnomalar apscheduler yordamida rejalashtiriladi.
+
+7. Texnik talablar
+
+Python 3.10+
+
+aiogram 3.x versiyasi
+
+Ma’lumotlar bazasi: SQLite yoki PostgreSQL (config orqali sozlanadigan)
+
+Kod modullar bo‘yicha tuzilsin (handlers, database, keyboards, services)
+
+requirements.txt va README.md bo‘lishi shart
+
+Bot ikki tilda ishlashi kerak (UZ/RU)
+
+Har bir foydalanuvchi faqat o‘z uylarini va ijarachilarini ko‘ra oladi
+
+To‘lov integratsiyasi test va real rejimga moslab yozilsin
+
+Natija: To‘liq ishlaydigan Telegram bot kodi, requirements.txt va ishga tushirish bo‘yicha yo‘riqnoma.
+
+Mukammal qilingan xususiyatlar:
+
+✓ Kengaytirilgan hisobot va tahlil tizimi - To'liq amalga oshirildi
+✓ Oylik va yillik daromad hisobotlari - Yig'ish stavkalari bilan
+✓ Mulklar samaradorligini tahlil qilish - Barcha mulklarni solishtirish
+✓ Kechikkan to'lovlarni kuzatish - Batafsil tushuntirish bilan
+✓ Hisobot menyusi - Asosiy bot interfeysiga qo'shildi
+✓ Ko'p tilni qo'llab-quvvatlash - Barcha hisobot xususiyatlari uchun
+✓ PropertyPhoto modeli - Mulk suratlarini boshqarish uchun
+
+Bot endi to'liq ishlamoqda va quyidagi imkoniyatlarni taqdim etadi:
+
+🏠 Mulklar - Ijara mulklarini boshqarish
+👥 Ijarachilar - Ijarachi ma'lumotlarini yuritish
+📊 Hisobot - Kengaytirilgan tahlil va hisobotlar
+👤 Profil - Foydalanuvchi sozlamalari
+💎 Obuna - Obuna xizmatlari
+
+
+ikkinchi bot: ijaraNazorat Boss, bu bot men uchun bunda ijaraNazorat botdagi foydalanuvchilar ro'yxati chiqishi kerak, premium sotib olish tugmasini bosganlarni men shaxsan tekshirib ularga premium ochib berishim uchun
+
+Telegram bot nomi: IjaraNazorat Boss
+Maqsad: Bu bot faqat admin uchun (admin Telegram ID: YOUR_TELEGRAM_ID) mo‘ljallangan bo‘lib, IjaraNazorat botining foydalanuvchilarini boshqarish imkoniyatini beradi.
+
+Funktsiyalar:
+
+/start buyrug‘ida admin panel uchun parol so'rasin, parol to'g'ri kiritilganda admin panel menyusi chiqadi:
+
+Foydalanuvchilar ro‘yxati
+
+Premium so‘rovlar
+
+Statistika
+
+parolini o'zgartirish
+
+Chiqish
+
+Foydalanuvchilar ro‘yxati — Bazadan (IjaraNazoratbot bazasidan) barcha foydalanuvchilarni chiqaradi (ID, ism, telefon, premium holati). Har bir foydalanuvchining yonida "Premium ochish" tugmasi bo‘lishi kerak.
+
+Premium so‘rovlar — Premium sotib olish tugmasini bosgan foydalanuvchilar ro‘yxati chiqadi. Yonida "Premium tasdiqlash" tugmasi bo‘lishi kerak. Tugma bosilganda foydalanuvchi premiumga o‘tkaziladi va unga "✅ Sizning premium obunangiz faollashtirildi!" xabari yuboriladi.
+
+Statistika — Jami foydalanuvchilar soni, premium foydalanuvchilar soni, oxirgi 7 kunda qo‘shilganlar soni ko‘rsatiladi.
+
+parolini o'zgartirish - admin panel parolini o'zgartirish imkonini bersin
+
+Xavfsizlik — Bot faqat admin Telegram ID’sini tanib ishlaydi. Boshqa foydalanuvchilarga "🚫 Sizga ruxsat berilmagan" xabarini yuboradi.
+
+Tugma ko‘rinishi (Inline Keyboard):
+
+[Foydalanuvchilar ro‘yxati] [Premium so‘rovlar]
+[Statistika]                 [Chiqish]
+Premium so‘rovlar ichida:
+
+
+Ali Valiyev (+99890...) — [✅ Premium ochish]
